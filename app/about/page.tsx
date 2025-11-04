@@ -295,7 +295,7 @@ export default function AboutPage() {
               <div className="space-y-3">
                 <div className="relative w-full overflow-hidden rounded-[16px] border border-white/15 bg-black aspect-square shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
                   <Image
-                    src="/images/vedvekhande.png"
+                    src="images/vedvekhande.png"
                     alt="Ved Vekhande"
                     fill
                     className="object-cover object-top"
@@ -328,7 +328,7 @@ export default function AboutPage() {
               <div className="space-y-3">
                 <div className="relative w-full overflow-hidden rounded-[16px] border border-white/15 bg-black aspect-square shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
                   <Image
-                    src="/images/siddeshwar.png"
+                    src="images/siddeshwar.png"
                     alt="Siddeshwar Lachyane"
                     fill
                     className="object-cover object-top"

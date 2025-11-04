@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description:
     "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
   icons: {
-    icon: "/images/astrex_white.svg",
-    shortcut: "/images/astrex_white.svg",
+    icon: "images/astrex_white.svg",
+    shortcut: "images/astrex_white.svg",
   },
   openGraph: {
     title: "Astrex AI",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Astrex AI",
     images: [
       {
-        url: "/images/astrex_white.svg",
+        url: "images/astrex_white.svg",
         width: 1200,
         height: 630,
         alt: "Astrex AI",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Astrex AI",
     description:
       "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
-    images: ["/images/astrex_white.svg"],
+    images: ["images/astrex_white.svg"],
   },
 };
 

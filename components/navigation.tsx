@@ -32,7 +32,7 @@ export function Navigation() {
 
           <div className="flex w-full items-center justify-between px-4 md:px-6">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/images/astrex_white.svg" alt="Astrex AI" width={32} height={32} className="rounded-sm" />
+              <Image src="images/astrex_white.svg" alt="Astrex AI" width={32} height={32} className="rounded-sm" />
               <span className="text-base md:text-lg font-semibold text-white">Astrex AI</span>
             </Link>
 
