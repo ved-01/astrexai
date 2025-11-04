@@ -6,8 +6,40 @@ import { Navigation } from "@/components/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Astrex AI - Intelligent Automation for Modern Teams",
-  description: "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
+  title: {
+    default: "Astrex AI - Making AI First Solutions",
+    template: "%s — Astrex AI",
+  },
+  description:
+    "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
+  icons: {
+    icon: "/images/astrex_white.svg",
+    shortcut: "/images/astrex_white.svg",
+  },
+  openGraph: {
+    title: "Astrex AI",
+    description:
+      "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
+    url: "https://www.astrexai.com",
+    siteName: "Astrex AI",
+    images: [
+      {
+        url: "/images/astrex_white.svg",
+        width: 1200,
+        height: 630,
+        alt: "Astrex AI",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Astrex AI",
+    description:
+      "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
+    images: ["/images/astrex_white.svg"],
+  },
 };
 
 export default function RootLayout({
