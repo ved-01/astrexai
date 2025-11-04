@@ -91,7 +91,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-2xl text-white font-semibold pt-4">
-                From initial discovery to long-term optimization, we're your partner in AI transformation.
+                From initial discovery to long-term optimization, we&rsquo;re your partner in AI transformation.
               </p>
             </div>
           </div>
@@ -367,7 +367,7 @@ export default function AboutPage() {
                 <Mail className="h-8 w-8 text-white" />
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                Let's Talk
+                Let&rsquo;s Talk
               </h2>
               <p className="text-xl text-neutral-400">
                 Ready to transform your business with AI? Get in touch.

@@ -184,7 +184,7 @@ export default function Home() {
               Ready to build your AI system?
             </h2>
             <p className="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto">
-              Let's discuss how we can transform your business with intelligent automation
+              Let&rsquo;s discuss how we can transform your business with intelligent automation
             </p>
             <Button 
               size="lg" 
@@ -192,7 +192,7 @@ export default function Home() {
               asChild
             >
               <a href="https://calendly.com/ved-at-work-mail/30min" target="_blank" rel="noopener noreferrer">
-                Let's Chat
+                Let&rsquo;s Chat
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
