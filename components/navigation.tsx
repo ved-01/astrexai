@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
-import { Sparkles, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from 'next/image'
 
 export function Navigation() {
   const pathname = usePathname()
@@ -31,7 +32,7 @@ export function Navigation() {
 
           <div className="flex w-full items-center justify-between px-4 md:px-6">
             <Link href="/" className="flex items-center space-x-2">
-              <Sparkles className="h-5 w-5 text-white" />
+              <Image src="/images/astrex_white.svg" alt="Astrex AI" width={32} height={32} className="rounded-sm" />
               <span className="text-base md:text-lg font-semibold text-white">Astrex AI</span>
             </Link>
 

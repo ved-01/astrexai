@@ -30,7 +30,7 @@ export default function Home() {
         <div className="w-full flex flex-col lg:flex-row min-h-screen">
           {/* Left content */}
           <div className="w-full lg:w-1/2 py-20 px-6 md:px-12 lg:px-16 relative z-10 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold metal-text leading-tight">
               Astrex AI
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-neutral-300 mt-6">
@@ -225,4 +225,5 @@ export default function Home() {
     </main>
   )
 }
+
 
