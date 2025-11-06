@@ -19,6 +19,7 @@ import {
 } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import SiddheswarImg from "@/components/assets/siddheswar.png"
 
 export default function AboutPage() {
   const [formData, setFormData] = useState({
@@ -327,6 +328,40 @@ export default function AboutPage() {
               </div>
             </Card>
 
+            {/* Siddeshwar */}
+            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] px-6 py-8 md:px-8 md:py-10 w-full max-w-4xl">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+                <div className="relative flex-shrink-0 w-32 h-32 md:w-56 md:h-56 overflow-hidden rounded-[16px] border border-white/15 bg-black shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
+                  <Image
+                    src={SiddheswarImg}
+                    alt="Siddeshwar Lachyane"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+                <div className="flex-1 space-y-3 text-center md:text-left">
+                  <div className="space-y-1">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-white">Siddheshwar Lachyane</h3>
+                    <p className="text-sm md:text-base text-neutral-400">Co-founder</p>
+                  </div>
+                  <p className="text-neutral-300 max-w-2xl text-sm leading-relaxed">
+                    Focused on building robust AI systems and delivering measurable product impact.
+                  </p>
+                  <div className="flex items-center gap-2 justify-center md:justify-start">
+                    <Button className="rounded-full bg-white text-black hover:bg-neutral-200 px-4 py-2 h-auto text-xs md:text-sm" asChild>
+                      <a href="https://www.linkedin.com/in/siddheswar-lachyane/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                        <ArrowUpRight className="ml-1 h-4 w-4" />
+                      </a>
+                    </Button>
+                    <Button className="rounded-full bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-md px-4 py-2 h-auto text-xs md:text-sm" asChild>
+                      <a href="mailto:sidlachyane06@gmail.com">Email</a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Card>
             
           </div>
         </div>
