@@ -19,9 +19,9 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="h-screen overflow-y-auto snap-y snap-mandatory bg-black">
+    <main className="min-h-[100dvh] overflow-y-auto snap-y snap-mandatory bg-black">
       {/* Hero Section - Full Screen */}
-      <section className="relative min-h-screen flex items-center overflow-x-hidden overflow-y-visible bg-black/[0.96] snap-start">
+      <section className="relative min-h-[100dvh] flex items-center overflow-x-hidden overflow-y-visible bg-black/[0.96] snap-start">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-b from-black to-neutral-900 snap-start py-24">
+      <section className="relative min-h-[100dvh] flex items-center bg-gradient-to-b from-black to-neutral-900 snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="relative min-h-screen flex items-center bg-neutral-900 snap-start py-24">
+      <section className="relative min-h-[100dvh] flex items-center bg-neutral-900 snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16 space-y-3">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -177,10 +177,10 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative min-h-screen flex flex-col justify-between bg-gradient-to-b from-neutral-900 to-black snap-start py-16 md:py-24">
+      <section className="relative min-h-[100dvh] flex flex-col justify-between bg-gradient-to-b from-neutral-900 to-black snap-start py-16 md:py-24">
         <div className="container mx-auto px-4 lg:px-8 flex-1 flex items-center">
           <div className="mx-auto max-w-3xl text-center space-y-8">
-            <h2 className="gradient-text text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
+            <h2 className="gradient-text text-3xl md:text-4xl lg:text-5xl font-bold">
               Ready to build your AI system?
             </h2>
             <p className="text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto">

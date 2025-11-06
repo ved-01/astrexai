@@ -76,22 +76,24 @@ export default function AboutPage() {
   }
 
   return (
-    <main className="h-screen overflow-y-auto snap-y snap-mandatory bg-black pt-16">
+    <main className="min-h-[100dvh] overflow-y-auto snap-y snap-mandatory bg-black pt-16">
       {/* About Astrex AI Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-b from-black to-neutral-900 snap-start py-24">
+      <section className="relative min-h-[calc(100dvh-4rem)] flex items-center bg-gradient-to-b from-black to-neutral-900 snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+            <h1 className="text-6xl md:text-7xl font-bold metal-text">
               About Astrex AI
             </h1>
             
-            <div className="mt-6 md:mt-8 space-y-6 md:space-y-7 text-xl md:text-2xl text-neutral-300 leading-relaxed">
-              <p>
+            <div className="mt-7 md:mt-9 space-y-6 md:space-y-7 text-xl md:text-2xl text-neutral-300 leading-relaxed">
+              <p className="text-lg md:text-xl">
                 <span className="text-white font-semibold">Astrex AI</span> blends deep AI expertise with production-grade engineering to build autonomous systems that adapt, scale, and deliver measurable outcomes tailored to your operation.
               </p>
 
               <p className="text-2xl text-white font-semibold pt-4">
-                From initial discovery to long-term optimization, we&rsquo;re your partner in AI transformation.
+                From initial discovery to long-term optimization, we&rsquo;re your
+                <br />
+                partner in <span className="gradient-text">AI transformation</span>.
               </p>
             </div>
           </div>
@@ -99,7 +101,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="relative min-h-screen flex items-center bg-neutral-900 snap-start py-24">
+      <section className="relative min-h-[100dvh] flex items-center bg-neutral-900 snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -160,7 +162,7 @@ export default function AboutPage() {
       </section>
 
       {/* Process Timeline Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-b from-neutral-900 to-black snap-start py-16">
+      <section className="relative min-h-[100dvh] flex items-center bg-gradient-to-b from-neutral-900 to-black snap-start py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-10 space-y-3">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -287,13 +289,13 @@ export default function AboutPage() {
       </section>
 
       {/* Founder Section */}
-      <section className="relative min-h-screen flex items-center bg-black snap-start py-16">
+      <section className="relative min-h-[100dvh] flex items-center bg-black snap-start py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-8 place-items-center">
             {/* Ved */}
-            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] p-4">
-              <div className="space-y-3">
-                <div className="relative w-full overflow-hidden rounded-[16px] border border-white/15 bg-black aspect-square shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
+            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] px-6 py-8 md:px-8 md:py-10 w-full max-w-4xl">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+                <div className="relative flex-shrink-0 w-32 h-32 md:w-56 md:h-56 overflow-hidden rounded-[16px] border border-white/15 bg-black shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
                   <Image
                     src="images/vedvekhande.png"
                     alt="Ved Vekhande"
@@ -302,64 +304,36 @@ export default function AboutPage() {
                     priority
                   />
                 </div>
-                <div className="text-center space-y-1">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white">Ved Vekhande</h3>
-                  <p className="text-sm md:text-base text-neutral-400">Founder</p>
-                </div>
-                <p className="text-center text-neutral-300 max-w-md mx-auto text-sm leading-relaxed">
-                  I build AI agents that scale into production, blending strategy, engineering, and rapid experimentation.
-                </p>
-                <div className="flex items-center justify-center gap-2">
-                  <Button className="rounded-full bg-white text-black hover:bg-neutral-200 px-4 py-2 h-auto text-xs md:text-sm" asChild>
-                    <a href="https://www.linkedin.com/in/ved-vekhande/" target="_blank" rel="noopener noreferrer">
-                      LinkedIn
-                      <ArrowUpRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </Button>
-                  <Button className="rounded-full bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-md px-4 py-2 h-auto text-xs md:text-sm" asChild>
-                    <a href="mailto:ved.at.work.mail@gmail.com">Email</a>
-                  </Button>
+                <div className="flex-1 space-y-3 text-center md:text-left">
+                  <div className="space-y-1">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-white">Ved Vekhande</h3>
+                    <p className="text-sm md:text-base text-neutral-400">Founder</p>
+                  </div>
+                  <p className="text-neutral-300 max-w-2xl text-sm leading-relaxed">
+                    I build AI agents that scale into production, blending strategy, engineering, and rapid experimentation.
+                  </p>
+                  <div className="flex items-center gap-2 justify-center md:justify-start">
+                    <Button className="rounded-full bg-white text-black hover:bg-neutral-200 px-4 py-2 h-auto text-xs md:text-sm" asChild>
+                      <a href="https://www.linkedin.com/in/ved-vekhande/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                        <ArrowUpRight className="ml-1 h-4 w-4" />
+                      </a>
+                    </Button>
+                    <Button className="rounded-full bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-md px-4 py-2 h-auto text-xs md:text-sm" asChild>
+                      <a href="mailto:ved.at.work.mail@gmail.com">Email</a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </Card>
 
-            {/* Siddeshwar */}
-            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] p-4">
-              <div className="space-y-3">
-                <div className="relative w-full overflow-hidden rounded-[16px] border border-white/15 bg-black aspect-square shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
-                  <Image
-                    src="images/siddeshwar.png"
-                    alt="Siddeshwar Lachyane"
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div className="text-center space-y-1">
-                  <h3 className="text-2xl md:text-3xl font-semibold text-white">Siddeshwar Lachyane</h3>
-                  <p className="text-sm md:text-base text-neutral-400">Co-Founder</p>
-                </div>
-                <p className="text-center text-neutral-300 max-w-md mx-auto text-sm leading-relaxed">
-                  I architect and deploy AI workflows that stay resilient at scale and deliver measurable impact.
-                </p>
-                <div className="flex items-center justify-center gap-2">
-                  <Button className="rounded-full bg-white text-black hover:bg-neutral-200 px-4 py-2 h-auto text-xs md:text-sm" asChild>
-                    <a href="https://www.linkedin.com/in/siddheswar-lachyane/" target="_blank" rel="noopener noreferrer">
-                      LinkedIn
-                      <ArrowUpRight className="ml-1 h-4 w-4" />
-                    </a>
-                  </Button>
-                  <Button className="rounded-full bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-md px-4 py-2 h-auto text-xs md:text-sm" asChild>
-                    <a href="mailto:sidlachyane06@gmail.com">Email</a>
-                  </Button>
-                </div>
-              </div>
-            </Card>
+            
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative min-h-screen flex items-center bg-black snap-start py-24">
+      <section id="contact" className="relative min-h-[100dvh] flex items-center bg-black snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12 space-y-4">
