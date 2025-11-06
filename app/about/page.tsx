@@ -368,10 +368,10 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative min-h-[100dvh] flex items-center bg-black snap-start py-24">
+      <section id="contact" className="relative min-h-[80dvh] flex items-center bg-black snap-start py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12 space-y-4">
+          <div className="max-w-xl mx-auto">
+            <div className="text-center mb-8 space-y-4">
               <div className="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center mb-6">
                 <Mail className="h-8 w-8 text-white" />
               </div>
@@ -384,7 +384,7 @@ export default function AboutPage() {
             </div>
             
             <Card className="bg-neutral-900/50 border-neutral-800 backdrop-blur-sm">
-              <CardContent className="pt-6">
+              <CardContent className="pt-4">
                 {status === 'success' ? (
                   <div className="text-center py-14 space-y-3 animate-in fade-in-0 zoom-in-95 duration-700">
                     <div className="mx-auto h-16 w-16 rounded-full bg-green-500/15 border border-green-500/30 flex items-center justify-center">

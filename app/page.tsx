@@ -12,7 +12,8 @@ import {
   ArrowRight,
   CheckCircle2,
   Mail,
-  Linkedin
+  Linkedin,
+  Quote
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -139,15 +140,18 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16 space-y-3">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Real stories, real results
+              Real Stories, Real <span className="gradient-text">Results</span>
             </h2>
             <p className="text-neutral-400 text-base md:text-lg max-w-2xl mx-auto">
               What partners say about working with Astrex AI.
             </p>
           </div>
 
-          <Card className="max-w-4xl mx-auto bg-black/50 border-transparent backdrop-blur-2xl transition-all duration-500 hover:bg-white/10 hover:shadow-[0_20px_60px_-30px_rgba(0,0,0,0.8)] hover:border-white/10 group">
-            <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="max-w-4xl mx-auto rounded-2xl p-[1px] bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-emerald-400/20">
+            <Card className="relative rounded-2xl bg-black/60 border-white/10 backdrop-blur-2xl transition-all duration-500 hover:border-white/20 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.65)] group">
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+              <Quote className="absolute -top-4 -left-4 h-10 w-10 text-purple-400/60" />
+              <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-1">
                 <CardTitle className="text-2xl text-white">Sasi Reddy</CardTitle>
                 <CardDescription className="text-neutral-300 text-sm md:text-base">
@@ -157,22 +161,23 @@ export default function Home() {
               <div className="text-neutral-400 text-xs md:text-sm whitespace-nowrap">
                 October 12, 2025 · Ved’s client
               </div>
-            </CardHeader>
-            <CardContent className="space-y-4 text-neutral-300 text-sm md:text-base leading-relaxed">
-              <p>
-                I had the pleasure of working with Ved on the early-stage development of the Finthos app, where he played a key role in building the foundation of our personal finance platform.
-              </p>
-              <p>
-                Ved brought strong technical skills across backend, API integration, and front-end setup using low-code tools. He also contributed to AI prompt tuning and helped us connect backend logic to AI workflows in a meaningful way.
-              </p>
-              <p>
-                His ability to understand product requirements and translate them into functional components was impressive, particularly given the fast-paced and evolving nature of an early-stage startup.
-              </p>
-              <p>
-                I appreciated his responsiveness and ability to work independently while staying aligned with the vision. I’m excited to see where he applies his skills next.
-              </p>
-            </CardContent>
-          </Card>
+              </CardHeader>
+              <CardContent className="space-y-4 text-neutral-300 text-sm md:text-base leading-relaxed">
+                <p>
+                  I had the pleasure of working with Ved on the early-stage development of the Finthos app, where he played a key role in building the foundation of our personal finance platform.
+                </p>
+                <p>
+                  Ved brought strong technical skills across backend, API integration, and front-end setup using low-code tools. He also contributed to AI prompt tuning and helped us connect backend logic to AI workflows in a meaningful way.
+                </p>
+                <p>
+                  His ability to understand product requirements and translate them into functional components was impressive, particularly given the fast-paced and evolving nature of an early-stage startup.
+                </p>
+                <p>
+                  I appreciated his responsiveness and ability to work independently while staying aligned with the vision. I’m excited to see where he applies his skills next.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
