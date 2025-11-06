@@ -4,8 +4,10 @@ import "./globals.css";
 import { Navigation } from "@/components/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://astrexai.vercel.app";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Astrex AI - Making AI First Solutions",
     template: "%s — Astrex AI",
@@ -20,11 +22,11 @@ export const metadata: Metadata = {
     title: "Astrex AI",
     description:
       "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
-    url: "https://www.astrexai.com",
+    url: siteUrl,
     siteName: "Astrex AI",
     images: [
       {
-        url: "images/astrex_white.svg",
+        url: "/images/astrex.png",
         width: 1200,
         height: 630,
         alt: "Astrex AI",
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     title: "Astrex AI",
     description:
       "We build AI Agents, automation systems, and data-driven intelligence that scale your business.",
-    images: ["images/astrex_white.svg"],
+    images: ["/images/astrex.png"],
   },
 };
 
