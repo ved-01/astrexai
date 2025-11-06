@@ -34,7 +34,7 @@ export default function Home() {
               Astrex AI
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-neutral-300 mt-6">
-              We build AI Agents that saves you time
+              We build <span className="gradient-text">AI Agents</span> that saves you time
             </h2>
             
             <div className="flex flex-col sm:flex-row gap-4 mt-10">

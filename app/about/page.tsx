@@ -165,10 +165,10 @@ export default function AboutPage() {
       <section className="relative min-h-[100dvh] flex items-center bg-gradient-to-b from-neutral-900 to-black snap-start py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-10 space-y-3">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Our Process
             </h2>
-            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
+            <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
               A systematic approach to AI transformation
             </p>
           </div>
@@ -187,9 +187,9 @@ export default function AboutPage() {
                   <CardHeader className="py-4">
                     <div className="flex items-center gap-2">
                       <Search className="h-5 w-5 text-purple-400" />
-                      <CardTitle className="text-white text-lg">Discovery</CardTitle>
+                      <CardTitle className="text-white text-base">Discovery</CardTitle>
                     </div>
-                    <CardDescription className="text-neutral-400 text-sm md:text-base mt-2 leading-relaxed">
+                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
                       We analyze your current processes, identify pain points, and uncover automation opportunities. 
                       Deep-dive workshops help us understand your unique challenges.
                     </CardDescription>
@@ -209,9 +209,9 @@ export default function AboutPage() {
                   <CardHeader className="py-4">
                     <div className="flex items-center gap-2">
                       <Lightbulb className="h-5 w-5 text-blue-400" />
-                      <CardTitle className="text-white text-lg">Blueprint</CardTitle>
+                      <CardTitle className="text-white text-base">Blueprint</CardTitle>
                     </div>
-                    <CardDescription className="text-neutral-400 text-sm md:text-base mt-2 leading-relaxed">
+                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
                       We design a comprehensive solution architecture tailored to your needs. 
                       Clear documentation, technical specifications, and implementation roadmap.
                     </CardDescription>
@@ -231,9 +231,9 @@ export default function AboutPage() {
                   <CardHeader className="py-4">
                     <div className="flex items-center gap-2">
                       <Hammer className="h-5 w-5 text-green-400" />
-                      <CardTitle className="text-white text-lg">Build</CardTitle>
+                      <CardTitle className="text-white text-base">Build</CardTitle>
                     </div>
-                    <CardDescription className="text-neutral-400 text-sm md:text-base mt-2 leading-relaxed">
+                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
                       Our engineers develop your custom AI system using best practices. 
                       Iterative development with regular check-ins and demonstrations.
                     </CardDescription>
@@ -253,9 +253,9 @@ export default function AboutPage() {
                   <CardHeader className="py-4">
                     <div className="flex items-center gap-2">
                       <Rocket className="h-5 w-5 text-yellow-400" />
-                      <CardTitle className="text-white text-lg">Deploy</CardTitle>
+                      <CardTitle className="text-white text-base">Deploy</CardTitle>
                     </div>
-                    <CardDescription className="text-neutral-400 text-sm md:text-base mt-2 leading-relaxed">
+                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
                       Smooth integration into your existing infrastructure. 
                       Comprehensive testing, training, and support during rollout.
                     </CardDescription>
@@ -274,9 +274,9 @@ export default function AboutPage() {
                   <CardHeader className="py-4">
                     <div className="flex items-center gap-2">
                       <RefreshCw className="h-5 w-5 text-orange-400" />
-                      <CardTitle className="text-white text-lg">Maintain</CardTitle>
+                      <CardTitle className="text-white text-base">Maintain</CardTitle>
                     </div>
-                    <CardDescription className="text-neutral-400 text-sm md:text-base mt-2 leading-relaxed">
+                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
                       Ongoing optimization, monitoring, and support. 
                       We ensure your AI systems evolve with your business needs.
                     </CardDescription>
