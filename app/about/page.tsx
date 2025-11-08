@@ -138,7 +138,7 @@ export default function AboutPage() {
                 <CardContent>
                   <p className="text-neutral-400 text-center leading-relaxed">
                     We build robust, scalable AI systems that are ready for real-world deployment from day one. 
-                    No prototypes, no experiments—just production-grade solutions.
+                    No experiments just production grade solutions.
                   </p>
                 </CardContent>
               </Card>
