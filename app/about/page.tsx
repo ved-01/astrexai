@@ -8,11 +8,6 @@ import {
   Target, 
   Code2, 
   Scale,
-  Search,
-  Lightbulb,
-  Hammer,
-  Rocket,
-  RefreshCw,
   Mail,
   ArrowUpRight,
   CheckCircle2
@@ -20,6 +15,7 @@ import {
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import SiddheswarImg from "@/components/assets/siddheswar.png"
+import { motion } from "framer-motion"
 
 export default function AboutPage() {
   const [formData, setFormData] = useState({
@@ -77,11 +73,17 @@ export default function AboutPage() {
   }
 
   return (
-    <main className="min-h-[100dvh] overflow-y-auto snap-y snap-mandatory bg-black pt-16">
+    <main className="min-h-[100dvh] overflow-y-auto snap-y snap-mandatory pt-16 bg-[linear-gradient(to_bottom,rgba(0,0,0,1)_0%,rgb(23,23,23)_25%,rgba(255,255,255,0.08)_50%,rgb(23,23,23)_75%,rgba(0,0,0,1)_100%)]">
       {/* About Astrex AI Section */}
-      <section className="relative min-h-[calc(100dvh-4rem)] flex items-center bg-gradient-to-b from-black to-neutral-900 snap-start py-24">
+      <section className="relative min-h-[calc(100dvh-4rem)] flex items-center snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <motion.div
+            className="max-w-4xl mx-auto text-center space-y-8"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <h1 className="text-6xl md:text-7xl font-bold metal-text">
               About Astrex AI
             </h1>
@@ -97,204 +99,111 @@ export default function AboutPage() {
                 partner in <span className="gradient-text">AI transformation</span>.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="relative min-h-[100dvh] flex items-center bg-neutral-900 snap-start py-24">
+      <section className="relative min-h-[100dvh] flex items-center snap-start py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16 space-y-4">
+          <motion.div
+            className="text-center mb-16 space-y-4"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               Why Choose Us
             </h2>
             <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
               Three pillars that set us apart
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="bg-black/50 border-neutral-800 backdrop-blur-sm">
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-500/10 flex items-center justify-center">
-                  <Target className="h-8 w-8 text-purple-400" />
-                </div>
-                <CardTitle className="text-2xl text-white">Production-Ready Systems</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-400 text-center leading-relaxed">
-                  We build robust, scalable AI systems that are ready for real-world deployment from day one. 
-                  No prototypes, no experiments—just production-grade solutions.
-                </p>
-              </CardContent>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
+            >
+              <Card className="bg-black/50 border-neutral-800 backdrop-blur-sm">
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-500/10 flex items-center justify-center">
+                    <Target className="h-8 w-8 text-purple-400" />
+                  </div>
+                  <CardTitle className="text-2xl text-white">Production-Ready Systems</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-neutral-400 text-center leading-relaxed">
+                    We build robust, scalable AI systems that are ready for real-world deployment from day one. 
+                    No prototypes, no experiments—just production-grade solutions.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
             
-            <Card className="bg-black/50 border-neutral-800 backdrop-blur-sm">
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-500/10 flex items-center justify-center">
-                  <Code2 className="h-8 w-8 text-blue-400" />
-                </div>
-                <CardTitle className="text-2xl text-white">Custom Architecture</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-400 text-center leading-relaxed">
-                  Leveraging LangGraph, LangChain, n8n, and modern frameworks, we design systems 
-                  tailored to your specific needs and constraints.
-                </p>
-              </CardContent>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+            >
+              <Card className="bg-black/50 border-neutral-800 backdrop-blur-sm">
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-500/10 flex items-center justify-center">
+                    <Code2 className="h-8 w-8 text-blue-400" />
+                  </div>
+                  <CardTitle className="text-2xl text-white">Custom Architecture</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-neutral-400 text-center leading-relaxed">
+                    Leveraging LangGraph, LangChain, n8n, and modern frameworks, we design systems 
+                    tailored to your specific needs and constraints.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
             
-            <Card className="bg-black/50 border-neutral-800 backdrop-blur-sm">
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-green-500/20 to-green-500/10 flex items-center justify-center">
-                  <Scale className="h-8 w-8 text-green-400" />
-                </div>
-                <CardTitle className="text-2xl text-white">Scalable Engineering</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-neutral-400 text-center leading-relaxed">
-                  Our solutions are built to scale. Clean code, maintainable architecture, 
-                  and systems designed to grow with your business.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Timeline Section */}
-      <section className="relative min-h-[100dvh] flex items-center bg-gradient-to-b from-neutral-900 to-black snap-start py-16">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-10 space-y-3">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Our Process
-            </h2>
-            <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-              A systematic approach to AI transformation
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6">
-              {/* Step 1 */}
-              <div className="relative flex gap-4 md:gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-semibold text-base">
-                    1
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+            >
+              <Card className="bg-black/50 border-neutral-800 backdrop-blur-sm">
+                <CardHeader className="text-center pb-4">
+                  <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-green-500/20 to-green-500/10 flex items-center justify-center">
+                    <Scale className="h-8 w-8 text-green-400" />
                   </div>
-                  <div className="w-0.5 flex-1 bg-gradient-to-b from-purple-500 to-blue-500 mt-3"></div>
-                </div>
-                <Card className="flex-1 bg-neutral-900/50 border-neutral-800 group-hover:bg-neutral-900/80 transition-all">
-                  <CardHeader className="py-4">
-                    <div className="flex items-center gap-2">
-                      <Search className="h-5 w-5 text-purple-400" />
-                      <CardTitle className="text-white text-base">Discovery</CardTitle>
-                    </div>
-                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
-                      We analyze your current processes, identify pain points, and uncover automation opportunities. 
-                      Deep-dive workshops help us understand your unique challenges.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </div>
-
-              {/* Step 2 */}
-              <div className="relative flex gap-4 md:gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold text-base">
-                    2
-                  </div>
-                  <div className="w-0.5 flex-1 bg-gradient-to-b from-blue-500 to-green-500 mt-3"></div>
-                </div>
-                <Card className="flex-1 bg-neutral-900/50 border-neutral-800 group-hover:bg-neutral-900/80 transition-all">
-                  <CardHeader className="py-4">
-                    <div className="flex items-center gap-2">
-                      <Lightbulb className="h-5 w-5 text-blue-400" />
-                      <CardTitle className="text-white text-base">Blueprint</CardTitle>
-                    </div>
-                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
-                      We design a comprehensive solution architecture tailored to your needs. 
-                      Clear documentation, technical specifications, and implementation roadmap.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </div>
-
-              {/* Step 3 */}
-              <div className="relative flex gap-4 md:gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white font-semibold text-base">
-                    3
-                  </div>
-                  <div className="w-0.5 flex-1 bg-gradient-to-b from-green-500 to-yellow-500 mt-3"></div>
-                </div>
-                <Card className="flex-1 bg-neutral-900/50 border-neutral-800 group-hover:bg-neutral-900/80 transition-all">
-                  <CardHeader className="py-4">
-                    <div className="flex items-center gap-2">
-                      <Hammer className="h-5 w-5 text-green-400" />
-                      <CardTitle className="text-white text-base">Build</CardTitle>
-                    </div>
-                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
-                      Our engineers develop your custom AI system using best practices. 
-                      Iterative development with regular check-ins and demonstrations.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </div>
-
-              {/* Step 4 */}
-              <div className="relative flex gap-4 md:gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center text-white font-semibold text-base">
-                    4
-                  </div>
-                  <div className="w-0.5 flex-1 bg-gradient-to-b from-yellow-500 to-orange-500 mt-3"></div>
-                </div>
-                <Card className="flex-1 bg-neutral-900/50 border-neutral-800 group-hover:bg-neutral-900/80 transition-all">
-                  <CardHeader className="py-4">
-                    <div className="flex items-center gap-2">
-                      <Rocket className="h-5 w-5 text-yellow-400" />
-                      <CardTitle className="text-white text-base">Deploy</CardTitle>
-                    </div>
-                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
-                      Smooth integration into your existing infrastructure. 
-                      Comprehensive testing, training, and support during rollout.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </div>
-
-              {/* Step 5 */}
-              <div className="relative flex gap-4 md:gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-semibold text-base">
-                    5
-                  </div>
-                </div>
-                <Card className="flex-1 bg-neutral-900/50 border-neutral-800 group-hover:bg-neutral-900/80 transition-all">
-                  <CardHeader className="py-4">
-                    <div className="flex items-center gap-2">
-                      <RefreshCw className="h-5 w-5 text-orange-400" />
-                      <CardTitle className="text-white text-base">Maintain</CardTitle>
-                    </div>
-                    <CardDescription className="text-neutral-400 text-xs md:text-sm mt-2 leading-relaxed">
-                      Ongoing optimization, monitoring, and support. 
-                      We ensure your AI systems evolve with your business needs.
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              </div>
-            </div>
+                  <CardTitle className="text-2xl text-white">Scalable Engineering</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-neutral-400 text-center leading-relaxed">
+                    Our solutions are built to scale. Clean code, maintainable architecture, 
+                    and systems designed to grow with your business.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Founder Section */}
-      <section className="relative min-h-[100dvh] flex items-center bg-black snap-start py-16">
+      <section className="relative min-h-[100dvh] flex items-center snap-start py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-8 place-items-center">
             {/* Ved */}
-            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] px-6 py-8 md:px-8 md:py-10 w-full max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="w-full flex justify-center"
+            >
+              <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] px-6 py-8 md:px-8 md:py-10 w-full max-w-4xl">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
                 <div className="relative flex-shrink-0 w-32 h-32 md:w-56 md:h-56 overflow-hidden rounded-[16px] border border-white/15 bg-black shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
                   <Image
@@ -326,10 +235,18 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-            </Card>
+              </Card>
+            </motion.div>
 
             {/* Siddeshwar */}
-            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] px-6 py-8 md:px-8 md:py-10 w-full max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
+              className="w-full flex justify-center"
+            >
+              <Card className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[22px] px-6 py-8 md:px-8 md:py-10 w-full max-w-4xl">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
                 <div className="relative flex-shrink-0 w-32 h-32 md:w-56 md:h-56 overflow-hidden rounded-[16px] border border-white/15 bg-black shadow-[0_10px_26px_-18px_rgba(0,0,0,0.7)]">
                   <Image
@@ -361,17 +278,24 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-            </Card>
+              </Card>
+            </motion.div>
             
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative min-h-[80dvh] flex items-center bg-black snap-start py-16">
+      <section id="contact" className="relative min-h-[80dvh] flex items-center snap-start py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-xl mx-auto">
-            <div className="text-center mb-8 space-y-4">
+            <motion.div
+              className="text-center mb-8 space-y-4"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <div className="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center mb-6">
                 <Mail className="h-8 w-8 text-white" />
               </div>
@@ -381,10 +305,16 @@ export default function AboutPage() {
               <p className="text-xl text-neutral-400">
                 Ready to transform your business with AI? Get in touch.
               </p>
-            </div>
+            </motion.div>
             
-            <Card className="bg-neutral-900/50 border-neutral-800 backdrop-blur-sm">
-              <CardContent className="pt-4">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <Card className="bg-neutral-900/50 border-neutral-800 backdrop-blur-sm">
+                <CardContent className="pt-4">
                 {status === 'success' ? (
                   <div className="text-center py-14 space-y-3 animate-in fade-in-0 zoom-in-95 duration-700">
                     <div className="mx-auto h-16 w-16 rounded-full bg-green-500/15 border border-green-500/30 flex items-center justify-center">
@@ -469,8 +399,9 @@ export default function AboutPage() {
                     </Button>
                   </form>
                 )}
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
