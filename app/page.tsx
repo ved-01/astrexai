@@ -66,7 +66,7 @@ export default function Home() {
                 className="rounded-full bg-white text-black hover:bg-neutral-200 text-lg px-8"
                 asChild
               >
-                <a href="https://calendly.com/ved-at-work-mail/30min" target="_blank" rel="noopener noreferrer">Book a Consultation</a>
+                <a href="https://calendly.com/ved-at-work-mail/30min" target="_blank" rel="noopener noreferrer">Calendly Link (Ved)</a>
               </Button>
             </div>
           </motion.div>
